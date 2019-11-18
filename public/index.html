@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+    <title>3partsystem-task1</title>
+</head>
+<body onload="getWeather()">
+    <div class="ui container weatherContainer">
+        <div id="weatherSearch">
+            <input name="city" id="city" type="text" placeholder="Enter a City" required>
+            <button class="ui button" onclick="getWeather()">Get Weather</button>
+        </div>
+        <div id="weatherOutput">
+            <h1 id="citySearched"></h1>
+            <h1 id="temperature"></h1>
+        </div>
+    </div>
+    <div id="ui container jokeContainer">
+        <button onclick="getJoke()">Click me if you dare!</button>
+        <h3 id="question"></h3>
+        <h2 id="punchline"></h2>
+    </div>
+</body>
+</html>
