@@ -1,0 +1,7 @@
+#weatherContainer > #weatherOutput > h1 {
+    margin-bottom: 2rem;
+    color: white;
+}
+#weatherSearch {
+    margin: auto;
+}
