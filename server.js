@@ -14,7 +14,7 @@ app.get("/city/:city", (req, res) =>
     request(`https://api.openweathermap.org/data/2.5/weather?q=${req.params.city}&units=metric&appid=${key}`, function(err, response, body){
         if(err){
             res.json({
-                message: "något gick fel"
+                message: err
             })
         }else {
             res.send(
@@ -29,7 +29,7 @@ app.get("/joke", (req, res) =>
     request(`https://official-joke-api.appspot.com/jokes/programming/random`, function(err, response, body){
         if(err){
             res.json({
-                message: "något gick fel"
+                message: err
             })
         }else {
             res.send(

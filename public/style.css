@@ -1,7 +1,16 @@
+body {
+    margin: 0;
+}
+
+.container {
+    margin: 0;
+}
+
 #weatherContainer > #weatherOutput > h1 {
     margin-bottom: 2rem;
     color: white;
 }
+
 #weatherSearch {
     margin: auto;
 }
