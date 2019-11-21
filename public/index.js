@@ -25,10 +25,8 @@ function getJoke(){
         .then(data => {
             if(!question.innerHTML && !punchline.innerHTML){
                 question.innerHTML = data[0].setup
-                question.scrollIntoView()
                 setTimeout( () => {
                     punchline.innerHTML = data[0].punchline
-                    punchline.scrollIntoView()
                 }, 2000)
             }else {
                 question.innerHTML = ""
