@@ -22,6 +22,7 @@ app.get("/city/:city", (req, res) =>
             )
         }   
     })
+    
 })
 
 app.get("/joke", (req, res) =>

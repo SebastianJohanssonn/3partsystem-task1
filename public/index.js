@@ -7,9 +7,9 @@ function getWeather(){
     fetch(`http://localhost:3000/city/${city.length ? city : "Gothenburg"}`)
         .then(res => res.json())
         .then(data => {
-            currentCity.innerHTML = "Choosen city:<br>" + data.name
-            temperature.innerHTML = "Current temperature:<br>" + Math.round(data.main.temp) + "&#8451"
-            weather.innerHTML = "Current weather:<br>" + data.weather[0].main
+            currentCity.innerHTML = "City:<br>" + data.name
+            temperature.innerHTML = "Temperature:<br>" + Math.round(data.main.temp) + "&#8451"
+            weather.innerHTML = "Weather:<br>" + data.weather[0].main
         }).
         catch(error => {
             console.log(error)

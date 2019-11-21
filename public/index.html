@@ -14,21 +14,21 @@
         <div id="weatherSearch" class="bg-dark p-4 text-center rounded">
             <h1 class="text-white">Get the latest weather data in your city!</h1>
             <div class="input-group d-flex justify-content-center">
-                <input name="city" id="city" type="text" placeholder="Enter a City" required>
+                <input class="rounded" name="city" id="city" type="text" placeholder="Enter a City" required>
                 <div class="input-group-append">
                     <button class="btn btn-warning" onclick="getWeather()">Get Weather</button>
                 </div>  
             </div>
         </div>
         <div class="container bg-secondary my-3 p-3 rounded" id="weatherContainer">
-            <div id="weatherOutput">
-                <h1 id="citySearched"></h1>
-                <h1 id="temperature"></h1>
-                <h1 id="weather"></h1>
+            <div id="weatherOutput" class="d-flex justify-content-center">
+                <h1 class="m-5" id="citySearched"></h1>
+                <h1 class="m-5" id="temperature"></h1>
+                <h1 class="m-5" id="weather"></h1>
             </div>
         </div>
         <div class="container text-center" id="jokeContainer">
-            <button class="btn btn-warning" onclick="getJoke()">Click me if you dare!</button>
+            <button class="btn btn-warning" onclick="getJoke()">Want to hear something funny?</button>
             <div id="jokeCard" class="mt-3">
                 <h3 id="question"></h3>
                 <h2 id="punchline"></h2>
