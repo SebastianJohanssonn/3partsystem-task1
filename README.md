@@ -4,7 +4,7 @@
 ## You can also click on a button below to get a random joke about programming.
 ### How to start the app:
 1. Type "npm install" to install the dependencies.
-2. Type "npm start" to start the server.
+2. Type "npm start" to start the server, if the script does not work, type "node server.js" instead.
 3. Type in the browser window of your choice "localhost:3000" to look at the result.
 
 ### Link to github:
