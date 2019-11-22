@@ -10,6 +10,7 @@ function getWeather(){
             currentCity.innerHTML = "City:<br>" + data.name
             temperature.innerHTML = "Temperature:<br>" + Math.round(data.main.temp) + "&#8451"
             weather.innerHTML = "Weather:<br>" + data.weather[0].main
+            document.getElementById("city").value = ""
         }).
         catch(error => {
             console.log(error)
