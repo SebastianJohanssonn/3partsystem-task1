@@ -24,14 +24,14 @@ function getJoke(){
     fetch(`http://localhost:3000/joke`)
         .then(res => res.json())
         .then(data => {
-            if(!question.innerHTML && !punchline.innerHTML){
+            if(question.innerHTML && punchline.innerHTML){
+                question.innerHTML = ""
+                punchline.innerHTML = ""
+            }else {
                 question.innerHTML = data[0].setup
                 setTimeout( () => {
                     punchline.innerHTML = data[0].punchline
                 }, 2000)
-            }else {
-                question.innerHTML = ""
-                punchline.innerHTML = ""
             }
         }).
         catch(error => {
